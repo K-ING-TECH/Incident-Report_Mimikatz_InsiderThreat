@@ -39,34 +39,34 @@ A logical image captured from a Linux host was analyzed for post-exploitation ac
 The environment is consistent with Kali Linux, evidenced by the use of penetration testing tools like msfconsole, binwalk, and manual script-based attacks.
 
 #### Answer: kali
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/Linux-Distro.png)
+![Linux Distro](images/Linux-Distro.png)
 
 **2. What is the MD5 hash of the Apache access.log file?**
 
 The access.log file under /var/log/apache2/ was found to be empty, with the corresponding MD5 hash:
 
 #### Answer: d41d8cd98f00b204e9800998ecf8427e
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/MD5.png)
+![MD5 Hash](images/MD5.png)
 
 **3. What is the name of the downloaded file?**
 
 The file mimikatz_trunk.zip was located in the Downloads folder, consistent with credential harvesting behavior.
 
  #### Answer: mimikatz_trunk.zip
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/mimikatz.png)
+![Mimikatz](images/mimikatz.png)
 
 **4. A secret file was created. What is the absolute path to this file?**
 
 From .bash_history, the attacker used: `touch snky snky > /root/Desktop/SuperSecretFile.txt`
 #### Answer: /root/Desktop/SuperSecretFile.txt
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/Secret-File.png)
+![Secret File](images/Secret-File.png)
 
 **5. What program used the file didyouthinkwedmakeiteasy.jpg during its execution?**
 
 The image didyouthinkwedmakeiteasy.jpg was processed using binwalk, indicating payload extraction.
 
 #### Answer: binwalk
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/Attacking-Machine.png)
+![Attacking Machine](images/Attacking-Machine.png)
 
 **6. What is the third goal from the checklist Karen created?**
 
@@ -85,14 +85,14 @@ On Karen’s Desktop, a note or checklist revealed:
 Apache logs showed zero recorded activity. The MD5 hash also confirmed the file was empty.
 
 #### Answer: 0
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/MD5.png)
+![MD5 Hash](images/MD5.png)
 
 **8. This machine was used to launch an attack on another. Which file contains the evidence for this?**
 
 The file irZLAohL.jpeg contained a screenshot of a terminal with elevated access — an image-based attack artifact.
 
 #### Answer: irZLAohL.jpeg
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/Attacking-Machine.png)
+![Attacking Machine](images/Attacking-Machine.png)
 
 **9. It is believed that Karen was taunting a fellow computer expert through a bash script within the Documents directory, who was it?**
 
@@ -105,7 +105,7 @@ A bash script in the Documents/myfirsthack/ folder contained messages mocking an
 Logs from /var/log/auth.log show: `su[4074]: + ??? root:postgres`
 
 #### Answer: postgres
-![](https://github.com/K-ING-TECH/Incident-Report_Mimikatz_InsiderThreat/blob/main/su_root-access.png)
+![Root Access](images/su_root-access.png)
 
 **11. What is the current working directory?**
 
